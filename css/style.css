@@ -125,7 +125,7 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  /* clip-path: inset(100%); */
+  clip-path: inset(100%);
 
   overflow: hidden;
   /* visibility: hidden; */
@@ -509,8 +509,9 @@ a {
 
 /* Clients  */
 .clients-list {
-  margin-top: 50px;
   display: flex;
+  
+  margin-top: 50px;
   gap: 30px;
   /* justify-content: space-between; */
 }
