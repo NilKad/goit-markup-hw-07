@@ -16,7 +16,7 @@
 <body>
   <!-- Шапка -->
   <header class="header">
-    <div class="container">
+    <div class="container header-container">
       <nav class="site-nav">
         <a href="./index.html" class="logo"><span class="logo-first-color">Web</span>Studio</a>
         <ul class="site-nav-list">
@@ -57,7 +57,11 @@
         <button data-modal-open type="button" class="hero-button button">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button data-modal-close class="button-close"></button>
+            <button data-modal-close class="button-close">
+              <svg class="icon-item-close" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg></a>
+            </button>
           </div>
         </div>
       </div>
@@ -75,8 +79,7 @@
               </svg>
             </div>
             <h3 class="benefits-list-tittle tittle">Внимание к деталям</h3>
-            <p class="benefits-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
+            <p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="benefits-item icon-clock">
@@ -86,8 +89,7 @@
               </svg>
             </div>
             <h3 class="benefits-list-tittle tittle">Пунктуальность</h3>
-            <p class="benefits-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            <p class="benefits-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li class="benefits-item icon-diagram">
@@ -97,8 +99,7 @@
               </svg>
             </div>
             <h3 class="benefits-list-tittle tittle">Планирование</h3>
-            <p class="benefits-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
+            <p class="benefits-text">Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li class="benefits-item icon-kosmos">
@@ -108,9 +109,7 @@
               </svg>
             </div>
             <h3 class="benefits-list-tittle tittle">Современные технологии</h3>
-            <p class="benefits-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
+            <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </div>
@@ -345,8 +344,7 @@
                 <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="footer-address-map link" target="_blank">г. Киев,
                   пр-т Леси Украинки, 26</a>
               </li>
-              <li class="footer-address-list">
-                <a href="mailto:info@example.com" class="link">info@example.com</a><br />
+              <li class="footer-address-list"><a href="mailto:info@example.com" class="link">info@example.com</a><br />
               </li>
               <li class="footer-address-list">
                 <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
