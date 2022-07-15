@@ -376,12 +376,15 @@ a {
 }
 
 .button-close {
+  display: flex;
   position: absolute;
   right: 8px;
   top: 8px;
   width: 30px;
   height: 30px;
 
+  align-items: center;
+  justify-content: center;
   color: var(--color-black);
   background-color: initial;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -390,8 +393,6 @@ a {
 .button-close:hover,
 .button-close:focus {
   fill: var(--main-active-color);
-  /* --color-black: var(--main-active-color); */
-  /* --color-black: red; */
 }
 
 /* benefits */
