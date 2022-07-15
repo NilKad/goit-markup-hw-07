@@ -27,6 +27,7 @@ active color -
   --footer-sec-color: rgba(255, 255, 255, 0.6);
   --portfolio-border: #eeeeee;
   --background-hero: #c4c4c4;
+  --background-whatis: rgba(47, 48, 58, 0.8);
   --border-color-clients: #afb1b8;
   --color1: var(--border-color-clients);
   --color-black: #000000;
@@ -291,23 +292,6 @@ a {
   margin-right: 10px;
 }
 
-/* .contact-link::before {
-  content: '';
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-.contact-link.email::before {
-  background-image: url('../images/email.svg');
-}
-.contact-link.phone::before {
-  background-image: url('../images/smartphone.svg');
-} */
-
 .contact-link:hover,
 .contact-link:focus {
   --color2: var(--main-active-color);
@@ -450,29 +434,7 @@ a {
   text-transform: uppercase;
   text-align: left;
 }
-/* .benefits-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--main-trhid-bg);
-}
-.icon-antenna::before {
-  background-image: url(../images/antenna1.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock1.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram1.svg);
-}
-.icon-kosmos::before {
-  background-image: url(../images/astronaut1.svg);
-} */
+
 /* Чем мы занимаемся */
 .whotis-list {
   display: flex;
@@ -482,6 +444,31 @@ a {
 }
 .whotis-tittle {
   margin-bottom: 50px;
+}
+
+.whotis-img {
+  /* display: block; */
+  position: relative;
+}
+.whotis-box {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-whatis);
+}
+.whotis-img-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
 }
 
 /* Наша комманда */
