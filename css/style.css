@@ -350,19 +350,20 @@ a {
 }
 .backdrop {
   position: fixed;
-  top: 0%;
+  top: 0;
   left: 0;
 
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--animations);
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  opacity: 1;
   width: 528px;
   height: 581px;
 
@@ -437,21 +438,21 @@ a {
 }
 
 /* Чем мы занимаемся */
-.whotis-list {
+.whatis-list {
   display: flex;
 }
-.whotis-item:not(:last-child) {
+.whatis-item:not(:last-child) {
   margin-right: 30px;
 }
-.whotis-tittle {
+.whatis-tittle {
   margin-bottom: 50px;
 }
 
-.whotis-img {
+.whatis-img {
   /* display: block; */
   position: relative;
 }
-.whotis-box {
+.whatis-box {
   display: flex;
   position: absolute;
   left: 0;
@@ -464,7 +465,7 @@ a {
 
   background-color: var(--background-whatis);
 }
-.whotis-img-tittle {
+.whatis-img-tittle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
