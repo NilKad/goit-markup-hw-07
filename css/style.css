@@ -195,8 +195,6 @@ a {
 .social-link:focus {
   background-color: var(--main-active-color);
   fill: var(--main-sec-color);
-  /* --color1: var(--main-sec-color); */
-  /* --color1: red; */
 }
 .footer .social-link {
   /* --color1: var(--main-sec-color); */
@@ -552,8 +550,6 @@ a {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--main-active-color);
-  /* --color1: var(--main-active-color); */
-  /* --color1: red; */
 
   border-color: var(--main-active-color);
 }
