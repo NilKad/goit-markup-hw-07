@@ -285,6 +285,7 @@ a {
 .contact-link {
   display: flex;
   color: var(--main-text-color);
+  transition: color var(--animations), fill var(--animations);
 }
 .icon-header {
   margin-right: 10px;
@@ -292,9 +293,8 @@ a {
 
 .contact-link:hover,
 .contact-link:focus {
-  --color2: var(--main-active-color);
+  fill: var(--main-active-color);
   color: var(--main-active-color);
-  transform: color var(--animations);
 }
 
 /* hero */
@@ -539,18 +539,13 @@ a {
   align-items: center;
   border: 1px solid var(--border-color-clients);
   border-radius: 4px;
-  transition-property: all;
-  transition-duration: 1000ms;
-  transition-timing-function: linear;
   fill: var(--border-color-clients);
-  transition: fill var(--animations);
-  /* transition:  1000ms linear; */
+  transition: fill var(--animations), border-color var(--animations);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--main-active-color);
-
   border-color: var(--main-active-color);
 }
 
@@ -661,7 +656,8 @@ a {
   transform: translatey(100%);
   transition: transform var(--animations), opacity var(--animations);
 }
-.box:hover .portfolio-overlay {
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
   transform: translatey(0);
   opacity: 1;
 }
