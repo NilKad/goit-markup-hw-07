@@ -386,7 +386,7 @@ a {
   border-radius: 4px;
   transition: transform var(--animations);
 }
-.form {
+.form-field {
   /* display: block; */
   /* height: 100%; */
 
