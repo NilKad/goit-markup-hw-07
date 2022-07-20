@@ -522,8 +522,8 @@ a {
 .form-field.checkbox {
   display: flex;
   align-items: center;
-  margin-left: 14px;
-  /* justify-content: center; */
+  /* margin-left: 14px; */
+  justify-content: center;
   font-size: 14px;
   line-height: 24px;
   /* outline: 1px solid red; */
@@ -788,7 +788,7 @@ a {
 .form-subscribe .form-field {
   width: min-content;
 }
-.form-subscribe {
+.form-subscribe .form-field {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
