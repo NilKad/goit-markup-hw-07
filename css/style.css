@@ -205,7 +205,7 @@ a {
 
 /*         MAIN        */
 /* Header */
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   align-self: center;
@@ -235,34 +235,34 @@ a {
   color: var(--main-text-second-color);
 }
 .site-nav,
-.site-nav-list {
+.site-nav__list {
   display: flex;
   align-items: center;
 }
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav-list {
+.site-nav__list {
   margin-left: 93px;
 }
-.site-nav-item {
+.site-nav__item {
   position: relative;
 }
 
-.site-nav-link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--animations);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.site-nav-link.current {
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link--current {
   color: var(--main-active-color);
 }
 
-.site-nav-link.current::after {
+.site-nav__link--current::after {
   display: flex;
   content: '';
   position: absolute;
@@ -280,21 +280,21 @@ a {
   margin-left: auto;
   align-items: center;
 }
-.contact-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.contact-list__link {
   display: flex;
   color: var(--main-text-color);
   transition: color var(--animations), fill var(--animations);
 }
-.icon-header {
+.contact-list__icon {
   margin-right: 10px;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   fill: var(--main-active-color);
   color: var(--main-active-color);
 }
@@ -302,7 +302,6 @@ a {
 /* hero */
 .hero {
   padding: 200px 0;
-  /* display: block; */
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -318,18 +317,21 @@ a {
 
   /* outline: 1px solid red; */
 }
-
-.hero-tittle,
-.hero-button {
+.hero {
   color: var(--main-sec-color);
   letter-spacing: 0.06em;
 }
+.hero-tittle,
+.hero-button {
+}
 
-.hero-tittle {
+.hero__tittle {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  color: var(--main-sec-color);
+  letter-spacing: 0.06em;
 }
 
 .hero-button {
