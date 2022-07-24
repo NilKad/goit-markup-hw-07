@@ -14,28 +14,35 @@
 </head>
 
 <body>
+  <!-- Шапка -->
   <header class="header">
-    <div class="container header-container">
-      <nav class="site-nav">
-        <a href="./index.html" class="logo"><span class="logo-first-color">Web</span>Studio</a>
-        <ul class="site-nav-list">
-          <li class="site-nav-item"><a href="./index.html" class="site-nav-link">Студия</a></li>
-          <li class="site-nav-item"><a href="./portfolio.html" class="site-nav-link current">Портфолио</a></li>
-          <li class="site-nav-item"><a href="" class="site-nav-link">Контакты</a></li>
+    <div class="container header__container">
+      <nav class="navigation container__navigation">
+        <a href="./index.html" class="navigation__logo logo"><span class="logo__first-color">Web</span>Studio</a>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="./index.html" class="site-nav__link ">Студия</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="" class="site-nav__link">Контакты</a>
+          </li>
         </ul>
       </nav>
 
-      <ul class="contact-list">
-        <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link email link">
-            <svg class="icon-header icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-email" class="test-icon"></use>
+      <ul class="contact">
+        <li class="contact__item">
+          <a href="mailto:info@devstudio.com" class="contact__link">
+            <svg class="contact__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-email"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link phone link"><svg class="icon-header icon" width="16"
-              height="16">
-              <use href="./images/icons.svg#icon-smartphone" class="test-icon"></use>
+        <li class="contact__item">
+          <a href="tel:+380961111111" class="contact__link">
+            <svg class="contact__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
@@ -44,178 +51,187 @@
 
   <main>
     <section class="section">
-      <div class="container">
-        <h1 class="vidsually-hidden">Портфолио</h1>
-        <ul class="portfolio-filter">
-          <li class="item">
-            <button type="button" class="portfolio-button button current">Все</button>
+      <div class="container portfolio">
+        <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="filter">
+          <li class="filter__item">
+            <button type="button" class="button-st button-st--current">Все</button>
           </li>
-          <li class="item">
-            <button type="button" class="portfolio-button button">Веб-сайты</button>
+          <li class="filter__item">
+            <button type="button" class="button-st button">Веб-сайты</button>
           </li>
-          <li class="item">
-            <button type="button" class="portfolio-button button">Приложения</button>
+          <li class="filter__item">
+            <button type="button" class="button-st button">Приложения</button>
           </li>
-          <li class="item">
-            <button type="button" class="portfolio-button button">Дизайн</button>
+          <li class="filter__item">
+            <button type="button" class="button-st button">Дизайн</button>
           </li>
-          <li class="item">
-            <button type="button" class="portfolio-button button">Маркетинг</button>
+          <li class="filter__item">
+            <button type="button" class="button-st button">Маркетинг</button>
           </li>
         </ul>
 
-        <ul class="portfolio-list">
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/tehnokryak.jpg" alt="Технокряк" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Технокряк</h2>
+                <p class="portfolio__text">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/poster-new-orlean-vs-golden-star.jpg" alt="Постер New Orlean vs Golden Star"
                   width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/restoran-seafood.jpg" alt="Ресторан Seafood" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Ресторан Seafood</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Ресторан Seafood</h2>
+                <p class="portfolio__text">Приложение</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/project-prime.jpg" alt="Проект Primed" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Проект Primed</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Проект Primed</h2>
+                <p class="portfolio__text">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/project-boxes.jpg" alt="Проект Boxesd" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Проект Boxes</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Проект Boxes</h2>
+                <p class="portfolio__text">Приложение</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/inspiration-has-no-border.jpg" alt="Inspiration has no Borders" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Inspiration has no Borders</h2>
+                <p class="portfolio__text">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/izdanie-limited-edition.jpg" alt="Издание Limited Edition" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Издание Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Издание Limited Edition</h2>
+                <p class="portfolio__text">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/project-lab.jpg" alt="Проект LAB" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Проект LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Проект LAB</h2>
+                <p class="portfolio__text">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item">
-            <a href="" class="portfolio-link">
-              <div class="box">
+          <li class="portfolio__item">
+            <a href="" class="portfolio__link">
+              <div class="portfolio__box">
                 <img src="./images/growing-business.jpg" alt="Growing Business" width="370" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами подпоясал меня необходимыми не по всей своего!
+                    приставка океана текстами
+                    подпоясал меня необходимыми не по всей своего!
                   </p>
                 </div>
               </div>
-              <div class="portfofilo-content">
-                <h2 class="portfolio-list-tittle tittle">Growing Business</h2>
-                <p class="portfolio-text">Приложение</p>
+              <div class="portfofilo__meta">
+                <h2 class="portfolio__title title">Growing Business</h2>
+                <p class="portfolio__text">Приложение</p>
               </div>
             </a>
           </li>
@@ -225,71 +241,72 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-item">
-        <div class="footer-address-div">
-          <a href="./index.html" class="logo-footer logo"><span class="logo-first-color">Web</span>Studio</a>
-          <address class="footer-address">
-            <ul>
-              <li class="footer-address-list">
-                <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="footer-address-map link" target="_blank">г. Киев,
-                  пр-т Леси Украинки, 26</a>
-              </li>
-              <li class="footer-address-list"><a href="mailto:info@example.com" class="link">info@example.com</a><br />
-              </li>
-              <li class="footer-address-list">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <p class="footer-social-text text">присоединяйтесь</p>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="" class="social-link instagram link">
-                <svg class="icon-item" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+    <div class="footer-item container ">
+      <!-- <div class="footer-item"> -->
+      <div class="footer-item__address">
+        <a href="./index.html" class="footer-item__logo logo"><span class="logo__first-color">Web</span>Studio</a>
+        <address class="footer-address">
+          <ul>
+            <li class="footer-address__list">
+              <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="footer-address__link" target="_blank">г. Киев,
+                пр-т Леси Украинки, 26</a>
             </li>
-            <li class="social-item">
-              <a href="" class="social-link twitter link">
-                <svg class="icon-item" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg></a>
+            <li class="footer-address__list"><a href="mailto:info@example.com"
+                class="footer-address__link link">info@example.com</a><br />
             </li>
-            <li class="social-item">
-              <a href="" class="social-link facebook link">
-                <svg class="icon-item" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link linkedin link">
-                <svg class="icon-item" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
+            <li class="footer-address__list">
+              <a href="tel:+380991111111" class="footer-address__link link">+38 099 111 11 11</a>
             </li>
           </ul>
-        </div>
-        <form class="form-subscribe">
-
-          <label class="form-field">
-            Подпишитесь на рассылку
-            <input type="email" name="email" placeholder="E-mail">
-          </label>
-          <button type="submit" class="hero-button button">Подписаться
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        </address>
       </div>
+      <div class="footer-item__soc">
+        <p class="footer-social__text text">присоединяйтесь</p>
+        <ul class="social footer-item__social ">
+          <li class="social__item">
+            <a href="" class="social__link instagram link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link twitter link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link facebook link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link linkedin link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-item__subscribe">
+        <label class="form-subscribe__field">
+          Подпишитесь на рассылку
+          <input type="email" name="email" class="form-subscribe__input" placeholder="E-mail">
+        </label>
+        <button type="submit" class="form-subscribe__button button-md button">Подписаться
+          <svg class="form-subscribe__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </form>
     </div>
+    <!-- </div> -->
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
