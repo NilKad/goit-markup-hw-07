@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Портфолио</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/portfolio.min.css" />
 </head>
 
 <body>
@@ -55,19 +57,19 @@
         <h1 class="visually-hidden">Портфолио</h1>
         <ul class="filter filter--mb">
           <li class="filter__item">
-            <button type="button" class="button-st button-st--current">Все</button>
+            <button type="button" class="filter__button filter__button--current">Все</button>
           </li>
           <li class="filter__item">
-            <button type="button" class="button-st button">Веб-сайты</button>
+            <button type="button" class="filter__button">Веб-сайты</button>
           </li>
           <li class="filter__item">
-            <button type="button" class="button-st button">Приложения</button>
+            <button type="button" class="filter__button">Приложения</button>
           </li>
           <li class="filter__item">
-            <button type="button" class="button-st button">Дизайн</button>
+            <button type="button" class="filter__button">Дизайн</button>
           </li>
           <li class="filter__item">
-            <button type="button" class="button-st button">Маркетинг</button>
+            <button type="button" class="filter__button">Маркетинг</button>
           </li>
         </ul>
 
@@ -260,9 +262,9 @@
           </ul>
         </address>
       </div>
-      <div class="footer-item__soc">
-        <p class="footer-social__text text">присоединяйтесь</p>
-        <ul class="social footer-item__social ">
+      <div class="footer-item__socblock">
+        <p class="footer__text text">присоединяйтесь</p>
+        <ul class="social footer-item__social">
           <li class="social__item">
             <a href="" class="social__link instagram link">
               <svg class="social__icon" width="20" height="20">
@@ -292,19 +294,18 @@
           </li>
         </ul>
       </div>
-      <form class="form-item__subscribe">
+      <form class="form-subscribe footer-item__form-subscribe">
         <label class="form-subscribe__field">
-          Подпишитесь на рассылку
+          <p class="footer__text text">Подпишитесь на рассылку</p>
           <input type="email" name="email" class="form-subscribe__input" placeholder="E-mail">
         </label>
-        <button type="submit" class="form-subscribe__button button-md button">Подписаться
+        <button type="submit" class="form-subscribe__button">Подписаться
           <svg class="form-subscribe__icon" width="24" height="24">
             <use href="./images/icons.svg#icon-icon-send"></use>
           </svg>
         </button>
       </form>
     </div>
-    <!-- </div> -->
   </footer>
 
 </body>

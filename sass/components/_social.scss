@@ -1,0 +1,36 @@
+/* social block  */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__item {
+  content: '';
+}
+
+.social__link {
+  display: flex;
+  content: '';
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border-color: transparent;
+  /* fill: $border-color-clients); */
+  /* fill: $main-bg-color); */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  transition: background-color $animations, fill $animations;
+
+  &:hover,
+  &:focus {
+    background-color: $main-active-color;
+    fill: $main-sec-color;
+  }
+}

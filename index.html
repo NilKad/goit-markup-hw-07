@@ -8,9 +8,11 @@
   <title>Главная</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -54,7 +56,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero__title title">Эффективные решения <br />для вашего бизнеса</h1>
-        <button data-modal-open type="button" class="button-md button">Заказать услугу</button>
+        <button data-modal-open type="button" class="herro__button">Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button data-modal-close class="button-close button-close--position">
@@ -68,7 +70,7 @@
 
               <label class="form-feedback__field">
                 Имя
-                <input class="form-feedback__input" type="text" name="name">
+                <input class="form-feedback__input" type="text" name="name" autofocus>
                 <svg class="form-feedback__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person-form"></use>
                 </svg>
@@ -107,8 +109,7 @@
                     договора</a>
                 </span>
               </label>
-              <button type="submit" class="form-feedback__button button-md button">Отправить</button>
-              <!-- <div class="hero-button button">отправить</div> -->
+              <button type="submit" class="form-feedback__button">Отправить</button>
             </form>
 
           </div>
@@ -420,8 +421,8 @@
           </ul>
         </address>
       </div>
-      <div class="footer-item__soc">
-        <p class="footer-social__text text">присоединяйтесь</p>
+      <div class="footer-item__socblock">
+        <p class="footer__text text">присоединяйтесь</p>
         <ul class="social footer-item__social">
           <li class="social__item">
             <a href="" class="social__link instagram link">
@@ -452,19 +453,18 @@
           </li>
         </ul>
       </div>
-      <form class="form-item__subscribe">
+      <form class="form-subscribe footer-item__form-subscribe">
         <label class="form-subscribe__field">
-          Подпишитесь на рассылку
+          <p class="footer__text text">Подпишитесь на рассылку</p>
           <input type="email" name="email" class="form-subscribe__input" placeholder="E-mail">
         </label>
-        <button type="submit" class="form-subscribe__button button-md button">Подписаться
+        <button type="submit" class="form-subscribe__button">Подписаться
           <svg class="form-subscribe__icon" width="24" height="24">
             <use href="./images/icons.svg#icon-icon-send"></use>
           </svg>
         </button>
       </form>
     </div>
-    <!-- </div> -->
   </footer>
   <script src="./js/modal.js"></script>
 </body>

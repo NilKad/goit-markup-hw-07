@@ -1,0 +1,32 @@
+.work__list {
+  display: flex;
+  gap: 30px;
+}
+
+.work__title {
+  margin-bottom: 50px;
+}
+
+.work__img {
+  /* display: block; */
+  position: relative;
+}
+.work__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background-color: $background-work;
+}
+.work__img-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-bg-color;
+}

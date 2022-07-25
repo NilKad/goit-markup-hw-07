@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  display: flex;
+  color: $main-text-color;
+  transition: color $animations, fill $animations;
+
+  &:hover,
+  &:focus {
+    fill: $main-active-color;
+    color: $main-active-color;
+  }
+}
+.contact__icon {
+  margin-right: 10px;
+}
