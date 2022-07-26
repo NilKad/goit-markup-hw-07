@@ -17,6 +17,7 @@
 
   border-radius: 50%;
   border-color: transparent;
+  // fill: red;
   /* fill: $border-color-clients); */
   /* fill: $main-bg-color); */
 
@@ -26,11 +27,25 @@
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
-  transition: background-color $animations, fill $animations;
 
-  &:hover,
-  &:focus {
+  // &:hover,
+  // &:focus {
+  //   background-color: $main-active-color;
+  //   fill: $main-sec-color;
+  // }
+
+  .team__social &:hover,
+  .team__social &:focus,
+  .footer-item__social &:hover,
+  .footer-item__social &:hover {
+    fill: $main-sec-color;
     background-color: $main-active-color;
+  }
+  .team__social & {
+    fill: $border-color-clients;
+  }
+  .footer-item__social & {
     fill: $main-sec-color;
   }
+  transition: background-color $animations, fill $animations;
 }

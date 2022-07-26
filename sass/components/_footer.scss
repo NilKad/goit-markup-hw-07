@@ -14,8 +14,8 @@
   line-height: 1.14;
   text-transform: uppercase;
 }
-.footer__social {
-  fill: $main-sec-color;
+.footer-item__socblock {
+  // fill: $main-sec-color;
 }
 
 .footer-address {
@@ -67,6 +67,4 @@
 
 .footer-item__social {
   margin-top: 20px;
-  fill: $main-bg-color;
-  // background: rgba(255, 255, 255, 0.1);
 }
