@@ -1,12 +1,12 @@
-.contact {
+.contacts {
   display: flex;
   align-items: center;
 }
-.contact__item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact__link {
+.contacts__link {
   display: flex;
   color: $main-text-color;
   transition: color $animations, fill $animations;
@@ -17,6 +17,6 @@
     color: $main-active-color;
   }
 }
-.contact__icon {
+.contacts__icon {
   margin-right: 10px;
 }

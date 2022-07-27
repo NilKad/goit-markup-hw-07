@@ -2,10 +2,9 @@
   display: flex;
   gap: 30px;
 }
-.team-block {
-  background-color: $main-trhid-bg;
-}
+
 .team-block__title {
+  @extend %title;
   margin-bottom: 50px;
 }
 
@@ -23,6 +22,7 @@
 }
 
 .team__title {
+  @extend %title;
   font-weight: 500;
 }
 .team__text {

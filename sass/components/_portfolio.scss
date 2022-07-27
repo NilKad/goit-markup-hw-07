@@ -50,7 +50,7 @@
 }
 
 .portfolio__title {
-  font-weight: 700;
+  @extend %title;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

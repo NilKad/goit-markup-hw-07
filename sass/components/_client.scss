@@ -1,13 +1,11 @@
 /* Clients  */
-.clients-block__title {
-  margin-bottom: 50px;
-}
-.client {
+
+.clients {
   display: flex;
   gap: 30px;
 }
 
-.client__link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -11,36 +11,29 @@
 
 .social__link {
   display: flex;
-  content: '';
+
   width: 44px;
   height: 44px;
 
   border-radius: 50%;
   border-color: transparent;
-  // fill: red;
-  /* fill: $border-color-clients); */
-  /* fill: $main-bg-color); */
+  fill: currentColor;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
 
-  .team__social &:hover,
-  .team__social &:focus,
-  .footer-item__social &:hover,
-  .footer-item__social &:hover {
-    fill: $main-sec-color;
-    background-color: $main-active-color;
-  }
   .team__social & {
-    fill: $border-color-clients;
+    color: $border-color-clients;
   }
   .footer-item__social & {
-    fill: $main-sec-color;
+    color: $main-sec-color;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
-  transition: background-color $animations, fill $animations;
+  &:hover {
+    color: $main-sec-color;
+    background-color: $main-active-color;
+  }
+
+  transition: background-color $animations, color $animations;
 }
